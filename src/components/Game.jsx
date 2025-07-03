@@ -21,13 +21,13 @@ const Game = () => {
           return 0;
         }
         if(count%2===0){
-          e.target.innerHTML=`<img  src='${Cross}'>`;
-          data[num]="x";
+          e.target.innerHTML=`<img  src='${Tick}'>`;
+          data[num]="o";
           setCount(++count);
         }
         else{
-            e.target.innerHTML=`<img src='${Tick}'>`;
-          data[num]="o";
+            e.target.innerHTML=`<img src='${Cross}'>`;
+          data[num]="x";
           setCount(++count);
         }
         Checkwin();
