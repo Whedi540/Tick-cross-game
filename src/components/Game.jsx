@@ -70,9 +70,9 @@ const Game = () => {
     const reset=()=>{
       setLock(false);
       setCount(0);
-      let data=["","","","","","","","","",];
+      data.fill("");
      titleref.current.innerHTML = 'Tick Cross Game in <span style="color: #ec4899; padding-left: 4px;">React</span>';
-      box_array.map((e)=>{
+      box_array.forEach((e)=>{
         e.current.innerHTML=""
       })
     } 
